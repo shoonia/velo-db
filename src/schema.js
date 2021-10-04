@@ -1,7 +1,7 @@
 exports.schema = {
     "schema": {
         "displayName": "mycollection",
-        "id": "mycollection",
+        "id": "mydb/mycollection",
         "allowedOperations": [
             "get",
             "find",
