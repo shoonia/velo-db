@@ -1,21 +1,21 @@
 exports.schema = {
     "schema": {
-        "displayName": "test",
-        "id": "test",
+        "displayName": "mycollection",
+        "id": "mycollection",
         "allowedOperations": [
             "get",
             "find",
             "count",
-            "update",
-            "insert",
-            "remove"
+            // "update",
+            // "insert",
+            // "remove"
         ],
         "maxPageSize": 50,
         "ttl": 3600,
         "fields": {
             "title": {
                 "displayName": "title",
-                "type": "datetime",
+                "type": "text",
                 "queryOperators": [
                     "eq",
                     "lt",
