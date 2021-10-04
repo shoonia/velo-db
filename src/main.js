@@ -27,6 +27,6 @@ app.use('data/get', (req, res) => {
 
 app.use('*', (req, res) => res.send('Hello'));
 
-app.listen('3000', () => {
+app.listen(process.env.PORT, () => {
   console.info('start');  
 });
