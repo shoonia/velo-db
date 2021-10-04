@@ -1,24 +1,17 @@
 const express = require('express');
-const { json, urlencoded } = require('body-parser');
-const schema = require('./schema.js')
+const { json } = require('body-parser');
+const { schemas, item } = require('./schema.js')
 
 const app = express();
 
-const item = {
-  _id: "24f63542-d9eb-4651-8aa3-bd710135dc0c",
-  _owner: "e3b156c2-28f9-4bda-97b3-6a3044636f69",
-  title: "test",
-};
-
 app.use(json())
-app.use(urlencoded({ extended: true }));
 
 app.use('/schemas/list', (req, res) => {
-  res.json({ schemas: [schema] });
+  res.json(schemas);
 });
 
 app.use('/schemas/find', (req, res) => {
-  res.json({ schemas: [schema] });
+  res.json(schemas);
 });
 
 app.use('data/get', (req, res) => {
@@ -41,5 +34,5 @@ app.use('*', (req, res) => {
 });
 
 app.listen(process.env.PORT, () => {
-  console.info('start');  
+  console.info('start');
 });
