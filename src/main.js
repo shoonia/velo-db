@@ -1,29 +1,29 @@
 const express = require('express');
 
-const { schemas, item } = require('./schema.js')
+const { item, schemas } = require('./mockdb.js')
 
 const app = express();
 
-app.use('/schemas/list', (req, res) => {
+app.post('/schemas/list', (req, res) => {
   res.json(schemas);
 });
 
-app.use('/schemas/find', (req, res) => {
+app.post('/schemas/find', (req, res) => {
   res.json(schemas);
 });
 
-app.use('data/get', (req, res) => {
+app.post('data/get', (req, res) => {
   res.json(item);
 });
 
-app.use('/data/find', (req, res) => {
+app.post('/data/find', (req, res) => {
   res.json({
     items: [item],
     totalCount: 1,
   });
 });
 
-app.use('/data/count', (req, res) => {
+app.post('/data/count', (req, res) => {
   res.json({ totalCount: 1 });
 });
 
