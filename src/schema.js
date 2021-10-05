@@ -24,55 +24,29 @@ exports.schemas = {
                     "displayName": "title",
                     "type": "text",
                     "queryOperators": [
-                        "eq",
-                        "lt",
-                        "gt",
-                        "hasSome",
-                        "and",
-                        "lte",
-                        "gte",
-                        "or",
-                        "not",
-                        "ne",
-                        "startsWith",
-                        "endsWith"
+                        // "eq",
+                        // "lt",
+                        // "gt",
+                        // "hasSome",
+                        // "and",
+                        // "lte",
+                        // "gte",
+                        // "or",
+                        // "not",
+                        // "ne",
+                        // "startsWith",
+                        // "endsWith"
                     ]
                 },
                 "_id": {
                     "displayName": "_id",
                     "type": "text",
-                    "queryOperators": [
-                        "eq",
-                        "lt",
-                        "gt",
-                        "hasSome",
-                        "and",
-                        "lte",
-                        "gte",
-                        "or",
-                        "not",
-                        "ne",
-                        "startsWith",
-                        "endsWith"
-                    ]
+                    "queryOperators": []
                 },
                 "_owner": {
                     "displayName": "_owner",
                     "type": "text",
-                    "queryOperators": [
-                        "eq",
-                        "lt",
-                        "gt",
-                        "hasSome",
-                        "and",
-                        "lte",
-                        "gte",
-                        "or",
-                        "not",
-                        "ne",
-                        "startsWith",
-                        "endsWith"
-                    ]
+                    "queryOperators": []
                 },
             }
         }
