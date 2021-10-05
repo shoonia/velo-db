@@ -1,16 +1,14 @@
 {
   "name": "velo-db",
   "version": "1.0.0",
-  "description": "",
+  "description": "Example of external database connections for Velo by Wix",
   "main": "src/main.js",
   "scripts": {
     "start": "node ./src/main.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.19.0",
     "express": "^4.17.1"
-  }
+  },
+  "author": "alexanderz@wix.com",
+  "license": "ISC"
 }
