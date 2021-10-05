@@ -1,10 +1,8 @@
 const express = require('express');
-const { json } = require('body-parser');
+
 const { schemas, item } = require('./schema.js')
 
 const app = express();
-
-app.use(json())
 
 app.use('/schemas/list', (req, res) => {
   res.json(schemas);
