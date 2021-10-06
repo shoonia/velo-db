@@ -13,7 +13,7 @@ app.post('/schemas/find', (req, res) => {
 });
 
 app.post('data/get', (req, res) => {
-  res.json(item);
+  res.json({ item });
 });
 
 app.post('/data/find', (req, res) => {
