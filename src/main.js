@@ -12,7 +12,7 @@ app.post('/schemas/find', (req, res) => {
   res.json(schemas);
 });
 
-app.post('data/get', (req, res) => {
+app.post('/data/get', (req, res) => {
   res.json({ item });
 });
 
